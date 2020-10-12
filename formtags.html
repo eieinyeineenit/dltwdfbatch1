@@ -1,0 +1,84 @@
+<html>
+<head>
+	<title>Form Tags</title>
+	</head>
+
+	<body>
+		<div>
+			<audio src="https://file-examples-com.github.io/uploads/2017/11/file_example_MP3_700KB.mp3" controls></audio>
+		</div>
+		<div>
+			<video src="https://www.learningcontainer.com/wp-content/uploads/2020/05/sample-mp4-file.mp4?_=1" controls loop></video>
+		</div>
+
+	<div>
+		 <iframe width="560" height="315" src="https://www.youtube.com/embed/-ztlu3Bm6b8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+	</div>
+	<div>
+		<fieldset>
+			<legend>This is sample form</legend>
+			<form action="" method="POST">
+		<label for="firstname">First Name</label>
+		<input type="text" name="firstname"	id="firstname" class="" placeholder="Enter Your First Name">
+		<br/>
+		<br/>
+		<label for="lastname">Last Name</label>
+		<input type="text" name="lastname"	id="lastname" class="" placeholder="Enter Your Last Name">
+		<br/><br/>
+		<label for="email">Email Address</label>
+		<input type="email" name="email"	id="email" class="" placeholder="Enter Your Emailaddress">
+		<br/><br/>
+		<label for="password">Password</label>
+		<input type="password" name="password"	id="password" class="" placeholder="Enter Your Password">
+		<br/><br/>
+		<label for="gender">Gender</label>
+		<input type="radio" name="gender" id="gender" class="" value="1">Male
+		<input type="radio" name="gender" id="gender" class="" value="0">Female
+		<br><br/>
+		<label for="color">Choose Your favourite color</label><!--Why don't present 'for' attribute-->
+		<input type="checkbox" name="color" id="color" value="pink">Pink
+		<input type="checkbox" name="color" id="color" value="blue">Blue
+		<input type="checkbox" name="color" id="color" value="gray">Gray
+		<input type="checkbox" name="color" id="color" value="gold">
+		Gold
+		<input type="checkbox" name="color" id="color" value="green">Green
+		<br><br>
+		<label for="country">Citizen</label>
+		<select name="country" id="country" class="">
+			<option selected disabled>Choose Your Country</option><!--main note selected-->
+	        <option value="myanmar">Myanmar</option>
+	        <option value="thailand">Thailand</option>
+	        <option value="korea">Korea</option>
+	        <option value="china">China</option>
+	    </select>
+	    <br/><br/>
+	    <label for="age">Age</label>
+		<input type="number" name="number"	id="number" class="">
+		<br/><br/>
+		<label for="week">Week</label>
+		<input type="week" name="week"	id="week" class="">
+		<br/><br/>
+		<label for="score">Score</label>
+		<input type="range" name="score" id="score" class="" value="10"><!--main noted range-->
+		<br><br>
+		<label for="datetime">Date Time</label>
+		<input type="datetime-local" name="datetime" id="datetime" class=""><!-- note that to use -local-->
+		<br><br>
+		<input type="button" name="cancel" id="cancel" class=""	value="Cancel">
+		<input type="reset" name="reset" id="reset" class=""	value="Reset">
+		<button type="submit" name="submit" id="submit" class="" >Submit</button>
+		
+
+	</form>
+		</fieldset>
+	</div>
+
+		<div>
+			<iframe src="imagetag.html" width="50%"></iframe>
+		</div>
+
+	</body>
+
+	<footer>
+	</footer>
+</html>

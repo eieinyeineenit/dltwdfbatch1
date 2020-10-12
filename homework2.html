@@ -16,22 +16,28 @@ Phone No:<a href="tel:0123456">0123456</a>
 	<hr/>
 	<center>
 	<table  border="1">
-	<thead bgcolor="#ada5a5">
-			<tr>
+	<thead>
+		<tr>
+			<th colspan="6">Item List</th>
+		</tr>
+			<tr bgcolor="#ada5a5">
 			<th>No</th>
 			<th>Item</th>
 			<th>Quantity</th>
 			<th>Unit Price</th>
 			<th>Total</th>
+			<th>QC</th>
 		</tr>
 	</thead>
-	<tbody>
+	<tbody align="center">
 		<tr>
 			<td>1</td>
 			<td>Coffee</td>
 			<td>12</td>
 			<td>100</td>
 			<td>1,200</td>
+			<td rowspan="5">Passed</td>
+
 		</tr>
 		<tr>
 			<td>2</td>
@@ -61,29 +67,25 @@ Phone No:<a href="tel:0123456">0123456</a>
 			<td>100</td>
 			<td>500</td>
 		</tr>
+	</tbody>
+	<tfoot align="right">
 		<tr>
-			<td></td>
-			<td></td>
-			<td></td>
-			<td>Sub Total:</td>
+			
+			<td colspan="4">Sub Total:</td>
 			<td>11,500</td>
+			<td rowspan ="3">Paid</td>
 		</tr>
 		<tr>
-			<td></td>
-			<td></td>
-			<td></td>
-			<td>Tax(5%):</td>
+			
+			<td colspan="4">Tax(5%):</td>
 			<td>575</td>
 		</tr>
 		<tr>
-			<td></td>
-			<td></td>
-			<td></td>
-			<td>Grand Total(Ks.):</td>
+			
+			<td colspan="4">Grand Total(Ks.):</td>
 			<td bgcolor="yellow">12,075</td>
 		</tr>
-	</tbody>
-	<tfoot>
+	
 	</tfoot>
 </table>
 </center>
