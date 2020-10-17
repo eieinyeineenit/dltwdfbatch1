@@ -2,7 +2,7 @@
 <head>
 	<title>Form Tags</title>
 	</head>
-
+	<!--autofocus,disabled,required,readonly,multiple,checked-->
 	<body>
 		<div>
 			<audio src="https://file-examples-com.github.io/uploads/2017/11/file_example_MP3_700KB.mp3" controls loop></audio><!--to quest use only controls why right result-->
@@ -17,7 +17,7 @@
 	<div>
 		<fieldset>
 			<legend>This is sample form</legend>
-			<form action="" method="POST">
+			<form action="" method="POST" enctype="multipart/form-data">
 		<label for="firstname">First Name</label>
 		<input type="text" name="firstname"	id="firstname" class="" placeholder="Enter Your First Name">
 		<br/>
@@ -39,21 +39,21 @@
 		<input type="checkbox" name="color" id="color" value="pink">Pink
 		<input type="checkbox" name="color" id="color" value="blue">Blue
 		<input type="checkbox" name="color" id="color" value="gray">Gray
-		<input type="checkbox" name="color" id="color" value="gold">
+		<input type="checkbox" name="color" id="color" value="gold" checked>
 		Gold
 		<input type="checkbox" name="color" id="color" value="green">Green
 		<br><br>
 		<label for="country">Citizen</label>
 		<select name="country" id="country" class="">
-			<option disabled>Choose Your Country</option><!--main note selected-->
-	        <option value="myanmar">Myanmar</option>
+			<option selected disabled>Choose Your Country</option><!--main note selected-->
+	        <option value="myanmar" selected>Myanmar</option>
 	        <option value="thailand">Thailand</option>
 	        <option value="korea">Korea</option>
 	        <option value="china">China</option>
 	    </select>
 	    <br/><br/>
 	    <label for="age">Age</label>
-		<input type="number" name="number"	id="number" class="">
+		<input type="number" name="number"	id="number" class="" step="5">
 		<br/><br/>
 		<label for="week">Week</label>
 		<input type="week" name="week"	id="week" class="">
@@ -64,10 +64,21 @@
 		<label for="datetime">Date Time</label>
 		<input type="datetime-local" name="datetime" id="datetime" class=""><!-- note that to use -local-->
 		<br><br>
+		<label for="nrcfont">NRC Front</label>
+		<input type="file" name="nrcfont" id="nrcfont" class="">
+		<br><br>
+		<label for="nrcback">NRC Back</label>
+		<input type="file" name="nrcback" id="nrcback" class="">
+		<br><br>
+		<label for="attach">Attachment</label>
+		<input type="file" name="attach" id="attach" class="" multiple>
+		<br><br>
 		<input type="button" name="cancel" id="cancel" class=""	value="Cancel">
 		<input type="reset" name="reset" id="reset" class=""	value="Reset">
 		<button type="submit" name="submit" id="submit" class="" >Submit</button>
-		
+		<br>
+		<br>
+		<input type="image" src="image\avator\download.jpg" width="30" height="40">
 
 	</form>
 		</fieldset><!--what is fieldset-->
