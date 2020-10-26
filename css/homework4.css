@@ -1,0 +1,43 @@
+h1{
+	color:white;
+	text-shadow:-5px -5px 3px black;
+	text-align: center;
+}
+
+
+body{
+	background-image:url(../image/background/background.jpg);*/
+	width:auto;
+	height:500px;
+	background-size:2350px;
+	
+
+}
+.center{
+	text-align:center;
+	color:white;
+	background-color:rgba(45,76,89,0.2);
+	border:3px;
+	border-style: dotted;
+	width:300px;
+	height:320px;
+	margin:130px 950px;
+	text-shadow:-5px -5px 3px black;
+
+	
+}
+.justify{
+	text-align:justify;
+text-shadow: none;}
+	
+footer
+{
+	color:blue;
+	font-size:15px;
+	
+	background-color:white;
+	width:auto;
+	
+	text-align: right;
+	line-height:fixed;
+}
