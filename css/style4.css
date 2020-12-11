@@ -1,7 +1,7 @@
 /*text indentation*/
-.p1{
+/*.p1{
 	text-indent: 100px;
-}
+}*/
 .p2{
 	/*text-transform: capitalize;*/
 	/*text-transform: uppercase;*/
@@ -34,11 +34,11 @@ a:hover{
 }
 .menutext:hover
 {
-	color:orange;
+	color:pink;
 	border-radius:500px;
 	background-color:green;
 	font-size:20px;
-	transition: 1s;
+	/*transition: 1s;*/
 }
 .menutext:active{
 	color:red;

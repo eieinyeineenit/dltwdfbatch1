@@ -8,23 +8,31 @@
 	font-size:50px;
 	width:800px;
 	height:200px;
-	background:rgba(58,90,118,1.00);
+	background:rgba(58,90,118,0.3);
 	/*opacity:0.5;*/
 	color:red;
 	border:5px;
 	border-style:dotted;
+	border-color: yellow;
 	/*border-style:solid; */
 	/*margin:updown leftright;*/
-	margin:100px auto;
+	margin:100px 50px;
+	padding:30px;
+	border-radius: 30px;
 
 }
+
+div p{padding:70px;}
 .seconddiv{
-	color:green;
+	font-size:40px;
 	width:600px;
 	height:200px;
-	font-size:40px;
-	background-image:url(../image/background/bg1/download.jpg);
+	border-style: double;
+	
+	background-color: pink;
+	color:green;
 	background-repeat:repeat;
+	border-color: red;
 	/*background-repeat:no-repeat;*/
 	/*background-repeat:repeat-x;*/
 	/*background-repeat:repeat-y;*/

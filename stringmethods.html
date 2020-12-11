@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>String Methods</title>
+</head>
+<body>
+	<!-- <div>
+		<h3 id="mm">Mandalay</h3>
+		<h3 id="th">Thailand</h3>
+	</div> -->
+	<div>
+		<button name="clickme" id="clickme" class="" onclick=clickme()>Button</button>
+	</div>
+	<div>
+	<div id="paragraph">
+		<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+	</div>
+	<div>
+		<button name="hideme" id="hideme" class="">Hide Me</button>
+	</div>
+
+	</div>
+	
+
+</body>
+<script type="text/javascript">
+	// Global Variable And Local Variable
+	// let x=5; //Global Variable
+	// console.log("this is value x =" + x);
+ // Return or Printout
+ // Parameter or Not (Single or Multi prameter)
+	// function myfun(){
+	// 	let y= 20; //Local Variable
+		// console.log(y);
+		// return y;
+		// let result=y + x;
+		// console.log("this is value of result=" + result);
+		// return result;
+ // } 
+	// console.log(myfun());
+	// myfun();
+
+	// console.log("this is external value od y=" +y); //Can't Use
+
+	// function yourfun(){
+	// 	let z=100;
+	// 	let rst=z + x;
+	// 	console.log("this is value of z =" +rst);
+	// }
+	// yourfun();
+
+	// String Methods
+	//  let abc="My Hello Mandalay and Yangon";
+	//  let efg ="I love Myanmar.";
+	//  console.log(abc.length); //count start 1
+	// console.log(abc);
+	// console.log("this is indexOf =" +abc.indexOf("M"));
+
+	// console.log("this is lastIndexOf="+abc.lastIndexOf("and"));
+	// console.log("this is search="+ abc.search("and"));
+	// console.log("this is slice="+ abc.slice(6,10)); //start count from 0 (where = index,how many start from 1)
+	//   console.log("this is substr =" +abc.substr(9,10)); //start count from 0 where = index, length(start point where)
+	//  console.log("this is replace = " +abc.replace("Yangon","Bago"));
+	//  console.log("this is toUpperCase = " +abc.toUpperCase());
+	//   console.log("this is toLowerCase = " +abc.toLowerCase());
+	//   console.log("this is concat = " +abc.concat(efg));
+	//  console.log("this is charAt = " + abc.charAt(7));//Start count from 0
+	//  console.log("this is charCodeAt = " +abc.charCodeAt(26) );//String to Unicode Char
+
+		 //Useful Style
+		 // document.getElementById("mm").style.color="green";
+		 //  document.getElementById("th").style.color="yellow";
+		 //   document.getElementById("th").style.fontSize="50px";
+		 //    document.getElementById("th").style.fontFamily="Arial";
+		 //     document.getElementById("mm").style.display="none";
+		     function clickme(){
+		     	window.alert("Thanks for ckick me");
+		     }
+		     let hiddenbtn= document.getElementById("hideme");
+
+		     hiddenbtn.addEventListener("click",function(){
+		     	paragraph.style.display="none";
+		     });
+
+	</script>
+</html>

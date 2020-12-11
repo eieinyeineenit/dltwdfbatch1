@@ -4,6 +4,7 @@
 	background-color: orange;
 	border:2px solid green;
 	float:left;
+	
 }
 .div2{
 	width:300px;
@@ -12,6 +13,7 @@
 	border:2px solid green;
 	float:left;
 }
+	
 .div3{
 	width:400px;
 	height:400px;
@@ -20,9 +22,9 @@
 	float:left;
 }
 .div4 {
-	width:500px;
+	width:400px;
 	height:500px;
-	background-color: black;
+	background-color: pink;
 	border:2px solid green;
 	float:left;
 }

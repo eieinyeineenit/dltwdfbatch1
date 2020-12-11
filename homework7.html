@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Calculator</title>
+</head>
+<link href="css/calculatorcss.css" rel="stylesheet" type="text/css">
+<link href="assets/libs/fontawesome/css/all.css" rel="stylesheet" type="text/css"/>
+<body>
+	<!-- <h2>This is my Calculator!</h2> -->
+<div class="calc">
+	<!-- <div class="display">0</div> -->
+<div class="second">
+	<div class="display">0</div>
+	<div>
+
+		<button  name="submit" id="submit" class="all" onclick="allClear()">AC</button>
+		<button  name="submit" id="submit" class="all"  onclick="clearLast()"><i class="fas fa-backspace"></i></button>
+		<button  name="submit" id="submit" class="all"  onclick="showDisplay('%')">%</button>
+		<button  name="submit" id="star" class="all"  onclick="showDisplay('/')">÷</button>
+		</div>
+		<div>
+		<button  name="submit" id="submit" class="all" onclick="showDisplay('7')">7</button>
+		<button  name="submit" id="submit" class="all" onclick="showDisplay('8')">8</button>
+		<button  name="submit" id="submit" class="all" onclick="showDisplay('9')">9</button>
+		<button  name="submit" id="star" class="all" onclick="showDisplay('*')">x</button>
+	</div>
+		<div>
+		<button  name="submit" id="submit" class="all" onclick="showDisplay('4')">4</button>
+		<button  name="submit" id="submit" class="all" onclick="showDisplay('5')">5</button>
+		<button  name="submit" id="submit" class="all" onclick="showDisplay('6')">6</button>
+		<button  name="submit" id="star" class="all" onclick="showDisplay('-')">-</button>
+	</div>
+		<div>
+		<button  name="submit" id="submit" class="all"onclick="showDisplay('1')" >1</button>
+		<button name="submit" id="submit" class="all" onclick="showDisplay('2')">2</button>
+		<button name="submit" id="submit" class="all" onclick="showDisplay('3')">3</button>
+		<button  name="submit" id="star" class="all"onclick="showDisplay('+')">+</button>
+	</div>
+		<div>
+		<button name="submit" id="submit" class="zero" onclick="showDisplay('0')" >0</button>
+		<button  name="submit" id="submit" class="all" onclick="showDisplay('.')">.</button>
+		<button  name="submit" id="star" class="all" onclick="calculate()">=</button>
+	</div>
+
+		
+		
+	
+</div>
+</div>
+</body>
+<script type="text/javascript">
+	let displayBox = document.querySelector(".display");
+    let operator = ["+","-","*","/","%","."];
+
+
+
+    function showDisplay(x) {
+
+        let current = displayBox.innerHTML;
+        let lastIndex = current[current.length-1];
+
+        if(displayBox.innerHTML == 0){
+            return displayBox.innerHTML = x;
+        }else if(operator.includes(x) && operator.includes(lastIndex) ){
+            console.log(current.substring(0,current.length-1)+x);
+            return displayBox.innerHTML = `${current.substring(0,current.length-1)}${x}`;
+        }
+        return displayBox.innerHTML += x;
+    }
+
+    function calculate() {
+        let current = displayBox.innerHTML;
+        try{
+            displayBox.innerHTML = eval(current);
+        }catch (e) {
+            alert("Your Input is wrong");
+        }
+    }
+
+    function allClear() {
+        displayBox.innerHTML = 0;
+    }
+
+    function clearLast() {
+        let current = displayBox.innerHTML;
+        if(current.length == 1){
+            displayBox.innerHTML = 0;
+
+        }else{
+            displayBox.innerHTML = current.substring(0,current.length-1);
+        }
+    }
+</script>
+</html>
